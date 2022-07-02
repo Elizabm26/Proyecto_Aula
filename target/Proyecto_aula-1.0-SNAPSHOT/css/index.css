@@ -122,8 +122,8 @@ li{
     margin-top: 10px;
 }
 .footer .footer-estudiantes{
-    width: 50%;
-    padding-top: 20px;
+    width: 70%;
+    padding-top: 10px;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
