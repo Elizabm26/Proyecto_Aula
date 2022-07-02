@@ -9,408 +9,141 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Condensed:wght@300&display=swap">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+        <style>
+            p{
+                font-family: Time;
+                text-align: justify;
+            }
+            h3{
+                font-family: Time;
+            }            
+        </style>
     </head>
-    <body>        
-        <div class="contenido">
-            <div class="header">
-                <div class="header-informacion">
-                    <h1>Universidad Técnica Estatal de Quevedo</h1>
-                    <p>Aplicaciones Web</p>
+    <body>    
+        <div class=" header bg-dark">
+            <div class="header-informacion bg-dark">
+                <h1>Universidad Técnica Estatal de Quevedo</h1>
+                <p>Aplicaciones Web</p>
+            </div>                
+        </div> 
+        <div>            
+            <nav class="navbar navbar-expand-lg bg-dark">
+                <div class="container-fluid" >
+                    <a class="navbar-brand text-white">Proyecto de aula</a>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon bg-light"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="#">Aplicaciones web</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="htmls/evolucion.html">Evolución de la Web</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Conceptos Básicos
+                                </a>
+                                <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item text-white" href="htmls/Chtml.html">HTML</a></li>
+                                    <li><a class="dropdown-item text-white" href="htmls/css.html">CSS</a></li>
+                                    <li><a class="dropdown-item text-white" href="htmls/java.html">Java</a></li>
+                                    <li><a class="dropdown-item text-white" href="htmls/inclusivo.html">Diseño inclusivo</a></li>      
+                                    <li><a class="dropdown-item text-white" href="htmls/jsp.html">JSP</a></li>   
+                                </ul>
+                            </li>                           
+                        </ul>                        
+                    </div>
                 </div>
-            </div>
-
-
+            </nav>                      
+        </div>
+        <section>
             <div class="material">
                 <div class="material-titulo">
                     <h1 id="titulo">
-                        Proyecto de Aula de<br>
-                        <b>Aplicaciones Web</b>
+                        Introducción Web
                     </h1>
-                    <img id="img-titulo" src="img/img_001.jpg" alt="">
-                </div>
+                    <img id="img-titulo" src="img/servicioweb.png" alt="">
+                </div>        
                 <!-- SEPARADOR -->
                 <hr size="3px" color="black">
-                Avances del Proyecto de aula
-                <div class="material-html">
-                    <h1 class="titulo">Apuntes de HTML</h1>
-                    <p>
-                        El Lenguaje de Marcado de Hipertexto (HTML) es el código
-                        que se utiliza para estructurar y desplegar
-                        una página web y sus contenidos. Por ejemplo, sus
-                        contenidos podrían ser párrafos, una lista con
-                        viñetas, o imágenes y tablas de datos.
-                    </p>
-                    <h2>Tipo de etiquetas</h2>
-                    <div class="material-puntos">
-                        <h3>Etiquetas de Apertura</h3>
+                <div class="material-html">            
+                    <div> 
+                        <h3>Página web</h3>
                         <p>
-                            Son el inicio. Indican dónde comienza el elemento o
-                            donde comienza a tener efecto. Consisten en
-                            el
-                            nombre del elemento encerrado entre los corchetes
-                            angulares.
+                            Es un documento digital escrito en HTML (muchas veces contiene CSS y JavaScript)capaz de ser interpretado por un navegador o browser.
                         </p>
-                        <h3>Etiquetas de cierre</h3>
-                        <p>
-                            Son lo mismo que las etiquetas de apertura, pero estas
-                            indican donde finaliza el elemento.
-                            Además, se diferencian de las otras ya que antes de
-                            escribir el elemento entre los corchetes,
-                            debemos escribir una barra diagonal “/ ”.
-                        </p>
-                        <h3>Etiquetas de Título</h3>
-                        <p>
-                            Se usa para indicar que lo que se pondrá a
-                            continuación es el título de la página web.
-                        </p>
-                        <h3>Etiquetas de Cuerpo</h3>
-                        <p>
-                            Esta etiqueta indica la parte del cuerpo o desarrollo
-                            del texto.
-                        </p>
-                        <h3>Etiquetas de Sección Inferior</h3>
-                        <p>
-                            Indica la parte inferior del texto. Puede ser una
-                            conclusión o la parte con iconos de redes
-                            sociales.
-                        </p>
-                        <h3>Etiquetas de Sección Superior</h3>
-                        <p>
-                            Esta etiqueta indica la parte superior del texto o
-                            encabezado.
-                        </p>
-                        <h3>Etiquetas de Título</h3>
-                        <p>
-                            Título o encabezado de la página.
-                        </p>
-                        <h3>Etiquetas de Subtítulo</h3>
-                        <p>
-                            Título de nivel 2 o subtítulo.
-                        </p>
-                        <h3>Etiquetas de Apartado</h3>
-                        <p>
-                            Subapartado
-                        </p>
-                        <h3>Etiquetas de Párrafo</h3>
-                        <p>
-                            Hace que cada elemento o texto aparezca en una nueva
-                            línea agrupado.
-                        </p>
-                        <h3>Etiquetas de Negrita</h3>
-                        <p>
-                            Sirven para que el texto que encierran se encuentre
-                            resaltado.
-                        </p>
-                        <h3>Etiquetas de Cursiva</h3>
-                        <p>
-                            Los elementos que encierra aparecen en cursiva.
-                        </p>
-                        <h3>Etiquetas de Imagen</h3>
-                        <p>
-                            Se emplea para insertar una imagen en la página en el
-                            lugar donde se quiere incluir. ¡Cuidado!
-                            Esta etiqueta no necesita una de cierre.
-                        </p>
-                        <h3>Etiquetas de Tachado</h3>
-                        <p>
-                            Los elementos que encierra aparecen tachados.
-                        </p>
-                        <h3>Etiquetas de Enlace</h3>
-                        <p>
-                            Permite generar un vínculo o link.
-                        </p>
-                    </div>
-                    <p>
-                        Cada una de las etiquetas debe acabar con su equivalente
-                        de cierre. Debemos tener claro que es muy
-                        importante que por cada etiqueta que abramos, deberemos
-                        incluir la correspondiente etiqueta de
-                        cierre. Así conseguiremos un código HTML bien formado y
-                        que los navegadores puedan interpretar sin
-                        espacio a error ni ambigüedad. [1]
-                    </p>
-                </div>
-                <div class="material-css">
-                    <h1 class="titulo">Apuntes de CSS</h1>
-                    <p>
-                        Hojas de Estilo en Cascadas o CSS (Cascading Style Sheets)
-                        Este es un lenguaje que se utiliza para
-                        darle un diseño al HTML, en el cual se le aplicaran
-                        estilos en uno o varios documentos HTML, este
-                        sigue un patrón de herencia.
-                    </p>
-                    <h2>Partes Principales de CSS</h2>
-                    <p>
-                        Para desarrollar con CSS tenemos que trabajar con una
-                        serie de elementos, mediante los cuales se
-                        declaran los estilos, básicamente éstos son los más
-                        importantes:
-                    </p>
-                    <ul>
-                        <li>Selectores, mediante los cuales podemos especificar qué
-                            elementos de la página nos estamos
-                            refiriendo</li>
-                        <li>Atributos de estilo para definir qué cosas queremos
-                            estilizar sobre los selectores indicados</li>
-                        <li>Una serie de valores, que indican qué estilo se debe
-                            aplicar a cada atributo sobre cada selector.
-                            [2] Los valores se expresan con unidades CSS, que sirven
-                            para cuantificar los valores (píxeles,
-                            puntos...)</li>
-                    </ul>
-                    <p>Ahora se mostrará las principales propiedades:</p>
-                    <div class="material-puntos">
-                        <h3>Font-family:</h3>
-                        <p>
-                            Define la familia tipográfica. Es conveniente poner
-                            una lista de dos o tres tipografías
-                            separadas por coma, porque si el usuario no tiene
-                            instalada la tipografía que nosotros elegimos,
-                            el navegador opta por mostrar la siguiente que debería
-                            ser una similar, si tampoco la tiene
-                            instalada, mostrará la tipografía por defecto.
-                        </p>
-                        <h3>Font-size:</h3>
-                        <p>
-                            Define el tamaño de la fuente y el valor se puede
-                            escribir en pixeles o en ems. En este momento
-                            se recomienda usar ems. Los dos son valores relativos,
-                            el píxel es un valor relativo a la
-                            resolución de la pantalla, pero la ems es relativo al
-                            tamaño de la fuente definida por el
-                            usuario.
-                        </p>
-                        <h3>Color:</h3>
-                        <p>
-                            Define el color de la tipografía. Los colores se
-                            pueden escribir de 3 formas distintas: con
-                            sistema hexadecimal, por ejemplo: #FF0000 (es rojo).
-                            Con los nombres de los colores (más
-                            limitado) por ejemplo: black, red, green. O usando
-                            RGB, esta paleta permite agregar el canal
-                            alfa para hacer transparencias.
-                        </p>
-                        <h3>Width:</h3>
-                        <p>
-                            Define el ancho de un elemento, el valor se puede
-                            escribir en pixeles, ems o porcentaje.
-                        </p>
-                        <h3>Max-width o min-width:</h3>
-                        <p>
-                            Definen el ancho máximo o mínimo de un elemento. Muy
-                            importante en sitios adaptables.
-                        </p>
-                        <h3>Height:</h3>
-                        <p>
-                            Define el alto de un elemento, el valor se puede
-                            escribir en pixeles, ems o porcentaje.
-                        </p>
-                        <h3>Max-height o min-height:</h3>
-                        <p>
-                            Definen el alto máximo o mínimo de un elemento. Muy
-                            importante en sitios adaptables.
-                        </p>
-                        <h3>Padding:</h3>
-                        <p>
-                            Es la distancia desde el borde de un elemento hasta su
-                            contenido.
-                        </p>
-                        <h3>Margin:</h3>
-                        <p>Es la distancia entre un elemento y otro (desde el
-                            borde de un elemento hacia afuera).</p>
-                        <h3>Border:</h3>
-                        <p>Define el borde de un elemento, su color, su estilo y
-                            grosor.</p>
-                        <h3>Background:</h3>
-                        <p>
-                            Define los fondos de un objeto. El fondo puede ser una
-                            imagen o un color. El color puede ser
-                            pleno o degradado. La imagen se puede repetir formando
-                            una o se puede especificar que no repita
-                            y que se coloque en determinada posición. [3]
-                        </p>
-                    </div>
-                </div>
-                <div class="material-js">
-                    <h1 class="titulo">Apuntes de JavaScript</h1>
-                    <p>
-                        JavaScript es un robusto lenguaje de programación que se
-                        puede aplicar a un documento HTML y usarse
-                        para crear interactividad dinámica en los sitios web. Fue
-                        inventado por Brendan Eich, cofundador del
-                        proyecto Mozilla, Mozilla Foundation y la Corporación
-                        Mozilla.
-                        <br><br>
-                        JavaScript por sí solo es bastante compacto, aunque muy
-                        flexible, y los desarrolladores han escrito
-                        gran cantidad de herramientas encima del núcleo del
-                        lenguaje JavaScript, desbloqueando una gran
-                        cantidad de funcionalidad adicional con un mínimo
-                        esfuerzo. Esto incluye:
-                    </p>
-                    <ul>
-                        <li>Interfaces de Programación de Aplicaciones del Navegador
-                            (APIs) — APIs construidas dentro de los
-                            navegadores que ofrecen funcionalidades como crear
-                            dinámicamente contenido HTML y establecer estilos
-                            CSS, hasta capturar y manipular un vídeo desde la cámara
-                            web del usuario, o generar gráficos 3D y
-                            muestras de sonido. </li>
-                        <li>APIs de terceros, que permiten a los desarrolladores
-                            incorporar funcionalidades en sus sitios de
-                            otros proveedores de contenidos como Twitter o
-                            Facebook.</li>
-                        <li>Marcos de trabajo y librerías de terceros que puedes
-                            aplicar a tu HTML para que puedas construir y
-                            publicar rápidamente sitios y aplicaciones. [4]</li>
-                    </ul>
-                    <p>
-                        El poder de JavaScript está disponible principalmente en
-                        lado frontend, agregando mayor
-                        interactividad a la web, también puedes usar las librerías
-                        y framework como: jquery, angular,
-                        backbone, react y demás, escritas sobre JavaScript, y que
-                        te ayudan a crear una mejor experiencia de
-                        usuario en nuestros sitios web. De igual manera JavaScript
-                        se puede utilizar en los servidores web.
-                        Node.JS es tu mejor opción para usar este lenguaje del
-                        lado del servidor.
-                        <br><br>
-                        Conozcamos ahora las características de JavaScript que
-                        haces de este lenguaje, uno de los más
-                        populares en la actualidad.
-                    </p>
-                    <ul>
-                        <li>Es Liviano.</li>
-                        <li>Multiplataforma, ya que se puede utilizar en Windows,
-                            Linux o Mac o en el navegador de tu
-                            preferencia.</li>
-                        <li>Es Imperativo y estructurado, mediante un conjunto de
-                            instrucciones indica al computador qué tarea
-                            debe realizar.</li>
-                        <li>Prototipado, debido a que usa prototipos en vez de clases
-                            para el uso de herencia.</li>
-                        <li>Orientado a objetos y eventos.</li>
-                        <li>Es Interpretado, no se compila para poder ejecutarse.</li>
-                    </ul>
-                    <p>
-                        Estas son las características que hacen de javascript un
-                        lenguaje que te permite desarrollar
-                        aplicaciones gigantes y potentes, como lo es: Google doc,
-                        Facebook, Twitter e incluso capaz de
-                        ejecutarse en el servidor como un servidor Web muy rápido,
-                        gracias a nodejs. [5]
-                    </p>
-                </div>
-                <div class="material-inclusividad">
-                    <h1 class="titulo">Apuntes de Inclusividad en el Desarrllo
-                        Web</h1>
-                    <p>
-                        Cuando nos referimos a Diseño Inclusivo estamos hablando
-                        de un marco metodológico mejorado a partir
-                        del conocido como DCU, que intenta satisfacer las
-                        necesidades de un mayor rango de usuarios que
-                        aquellos representados por el 'usuario medio'. [6]
-                        <br><br>
-                        Sin embargo, el conjunto completo de indicadores de
-                        rendimiento debe considerar un conjunto más
-                        amplio de aspectos relacionados con las personas, los
-                        beneficios y el planeta. [7]
-                        <br><br>
-                        De esta manera es posible afirmar que el mayor objetivo
-                        del diseño inclusivo es crear una sociedad
-                        más justa, accesible e igualitaria [8]. Para eso hay que
-                        adoptar un pensamiento inclusivo:
-                    </p>
-                    <ul>
-                        <li>Conoce a las personas para las que diseñas.</li>
-                        <li>Recuerda que cada cliente se beneficia.</li>
-                        <li>Identifica tus suposiciones.</li>
-                        <li>Recuerda que el diseño inclusivo debe ser parte de cada
-                            etapa del desarrollo del producto.</li>
-                        <li>No dejes que los datos se hagan cargo.</li>
-                        <li>Diseña para usos poco comunes primero.</li>
-                        <li>Se considerado al usar el color.</li>
-                        <li>Diseña con claras posibilidades.</li>
-                        <li>Diseña interfaces de usuario inclusivas.</li>
-                        <li>Diseñar correos electrónicos inclusivos.</li>
-                        <li>Elige las personas adecuadas para tomar las decisiones
-                            finales.</li>
-                        <li>Vincula el diseño inclusivo a los objetivos
-                            estratégicos.</li>
-                    </ul>
-                </div>
-                <!-- SEPARADOR -->
-                <hr size="3px" color="black">
-                <div class="material-referencias">
-                    <h1 class="titulo">Referencias</h1>
-                    <div class="referencias-contenido">
-                        <h2>[1]</h2>
-                        <p>
-                            Vadavo, «Vadavo,» 20 06 2022. [En línea]. Available:
-                            https://www.vadavo.com/blog/html-que-es-y-para-quesirve/.
-                        </p>
-                        <h2>[2]</h2>
-                        <p>
-                            S. Borja, «Desarrolloweb.com,» 16 07 2003. [En línea].
-                            Available:
-                            https://desarrolloweb.com/home/css#track188.
-                        </p>
-                        <h2>[3]</h2>
-                        <p>
-                            L. Chuburu, «Laura Chuburu,» 10 08 2020. [En línea].
-                            Available:
-                            https://www.laurachuburu.com.ar/tutoriales/propiedades
-                            -css.php.
-                        </p>
-                        <h2>[4]</h2>
-                        <p>
-                            M. contributors, «MDN web docs,» 22 01 2022. [En
-                            línea]. Available:
-                            https://developer.mozilla.org/es/docs/Learn/Getting_st
-                            arted_with_the_web/JavaScript_basics.
-                        </p>
-                        <h2>[5]</h2>
-                        <p>
-                            J. G. G. Caballero, «DevCode,» 27 08 2017. [En línea].
-                            Available:
-                            https://devcode.la/blog/que-es-javascript/.
-                        </p>
-                        <h2>[6]</h2>
-                        <p>
-                            Y. M. F. F. J. Hassan Montero, «No Solo Usabilidad,»
-                            02 09 2003. [En línea]. Available:
-                            https://www.nosolousabilidad.com/articulos/diseno_incl
-                            usivo.htm.
-                        </p>
-                        <h2>[7]</h2>
-                        <p>
-                            J. J. Lugo, «IdeasDI,» 13 06 2018. [En línea].
-                            Available:
-                            https://ideasdi.com/recursos/que-es-el-disenoinclusivo/.
-                        </p>
-                        <h2>[8]</h2>
-                        <p>
-                            J. Maceira, «JESÚS.MACEIRA,» 30 07 2018. [En línea].
-                            Available:
-                            https://jesusmaceira.com/diseno-inclusivo-12-formasde-disenar-para-todos/.
-                        </p>
-                    </div>
-                </div>
-                <div class="footer">
-                    <ul class="footer-estudiantes">                        
-                        <li class="nav-item">
-                            <a>Bravo Ericka</a>
-                        </li>
-                        <li class="nav-item">
-                            <a>Moran Oscar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a>Zambrano Sebastian</a>
-                        </li>
 
-                    </ul>
-                </div>
+                        <h3>Sitio web</h3>
+                        <p> 
+                            Es una colección de páginas web con información relacionada sobre un mismo tópico e interlazadas entre ellas.
+                        </p> 
+                        <h3>Aplicación web</h3>
+                        <p> 
+                            Es un sitio web dinámico, capaz de hacer que sus páginas web presenten la información de acuerdo a los datos proporcionados por el usuario.
+                        </p> 
+                        <h3>Portal web</h3>
+                        <p> 
+                            Es un sitio web que ofrece de manera integrada o de forma única el ingreso a los “sitios web” o “aplicaciones web” de una empresa.
+                        </p>  
+                        <h3>Dominio web</h3>
+                        <p>
+                            Nombre único que identifica a un sitio web como único en la red. Subdominio es el nombre de una aplicación o sitio web que necesita del dominio para ser visible en red.
+                        </p>
+
+                        <h3>Servidor web</h3>
+                        <p> 
+                            Programa de software que procesa una aplicación del lado del servidor, realizando conexiones bidireccionales o unidireccionales y síncronas o asíncronas con el cliente.
+                        </p>    
+                        <h3>Servidor de aplicaciones</h3>
+                        <p>
+                            Aplicación de software que corre sobre una computadora generalmente con mayores recursos de procesamiento, memoria y almacenamiento que las demás computadoras de la red, y que ejecuta las aplicaciones (programas servidores)para brindar los servicios a los clientes (computadoras) que los soliciten.
+                        </p> 
+                    </div>
+                    <div>
+
+                        <h3>Métodos HTTP</h3>
+                        <p>
+                            Los métodos HTTP son: GET, POST, PUT DELETE, HEAD, CONNECT, OPTIONS, TRACE, PATCH.
+                        </p>
+                        <h3>Términos relacionados con HTTP</h3>
+                        <p>
+                            Términos relacionados y muy parecidos (pero diferentes) son: URI, URL, URN, URC.
+                        </p>
+                        <h3>Evolución de las aplicaciones</h3>
+                        <p>
+                            Las Aplicaciones de software pasaron desde aplicaciones que se ejecutaban en una computadora incapaces de compartir información hasta aplicaciones totalmente distribuida y heterogéneas que comparten información totalmente distribuida.
+                        </p>
+                        <h3>Características de las aplicaciones web</h3>
+                        <p>
+                            Entre las principales características de las aplicaciones web se puede citar: Son multiplataforma, fácil y económico mantenimiento, desarrollo económico, diseño fácil y sencillo, independientes de hardware y software, independientes de los recursos del cliente, sin estado y sin conexión, dependientes de la red y almacenamiento remoto.
+                        </p>
+                        <h3>Criterios de clasificación de las aplicaciones web</h3>
+                        <p>
+                            Se pueden clasificar: Según el tipo de interacción, según el servicio ofrecido, entre los principales puntos de vista.
+                        </p>
+                    </div>
+                </div> 
             </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <ul class="footer-estudiantes">                        
+                    <li class="nav-item">
+                        <a>Bravo Ericka</a>
+                    </li>
+                    <li class="nav-item">
+                        <a>Moran Oscar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a>Zamora Sebastian</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </body>
 </html>

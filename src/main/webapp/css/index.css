@@ -98,7 +98,14 @@ li{
     border-radius: 2em;
     margin-left: auto;
 }
-
+.centrado{
+    margin:10px auto;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: 200px;
+}
 .referencias-contenido{
     display: grid;
     grid-template-columns: 1fr 1fr;
