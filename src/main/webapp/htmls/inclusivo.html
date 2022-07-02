@@ -24,11 +24,22 @@ and open the template in the editor.
             }
             h3{
                 font-family: Time;
-            }            
+            }    
+            li{
+                 font-family: Time;
+            }
+            #img-contenido{
+                height: 200px;
+                width: 350px;
+                margin:10px auto;
+                display:block;
+                margin-left: auto;
+                margin-right: auto;
+            }
         </style>
     </head>
     <body>
-          <div class=" header bg-dark">
+        <div class=" header bg-dark">
             <div class="header-informacion bg-dark">
                 <h1>Universidad Técnica Estatal de Quevedo</h1>
                 <p>Aplicaciones Web</p>
@@ -56,7 +67,7 @@ and open the template in the editor.
                                 <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item text-white" href="Chtml.html">HTML</a></li>
                                     <li><a class="dropdown-item text-white" href="css.html">CSS</a></li>
-                                    <li><a class="dropdown-item text-white" href="java.html">Java</a></li>
+                                    <li><a class="dropdown-item text-white" href="java.html">JavaScript</a></li>
                                     <li><a class="dropdown-item text-white" href="#">Diseño inclusivo</a></li>      
                                     <li><a class="dropdown-item text-white" href="jsp.html">JSP</a></li>   
                                 </ul>
@@ -66,7 +77,112 @@ and open the template in the editor.
                 </div>
             </nav>                      
         </div>
-         <footer>
+        <section>
+            <div class="material">
+                <div class="material-titulo">
+                    <h1 id="titulo">
+                        Introducción Accesibilidad web                       
+                    </h1>
+                    <img id="img-titulo" src="../img/accesibilidadweb.jpg" alt="">
+                </div>        
+                <!-- SEPARADOR -->
+                <hr size="3px" color="black">
+                <div class="material-html">            
+                    <div> 
+                        <p>
+                            Lograr que la Web sea accesible para todos, sin importar las discapacidades o problemas
+                            tecnológicos que presenten las personas. La accesibilidad web universal es uno de
+                            los objetivos de World Wide Web Consortium. W3C es una comunidad internacional
+                            donde las organizaciones miembros, el personal a tiempo completo y el público trabajan
+                            juntos para desarrollar estándares web. Dirigida por el inventor y director web Tim
+                            Berners-Lee y el director ejecutivo Jeffrey Jaffe, la misión del W3C es llevar la Web a su
+                            máximo potencial.
+                        </p>
+                        <h3>Accesibilidad web</h3>
+                        <p>
+                            La accesibilidad Web significa que personas con algún tipo de discapacidad y/o
+                            con limitaciones tecnológicas van a poder hacer uso de la Web.
+                        </p>
+                        <h3>Importancia de la Accesibilidad Web</h3>
+                        <p>
+                            Permite a todas las personas sin importar sus limitaciones sentirse iguales, con
+                            las mismas posibilidades de mejorar su estilo de vida.
+                        </p>
+                        <h3>Iniciativa de Accesibilidad Web (WAI)</h3>
+                        <p>
+                            La WAI trabaja para establecer estándares internacionales que garanticen la accesibilidad
+                            web. Entre estos estándares tenemos por ejemplo las Pautas de Accesibilidad al
+                            Contenido Web (WCAG 1.0, WCAG 2.0, WCAG 2.1). Otro estándar ISO es ISO/IEC40500.
+                            Los estándares internacionales involucran a todos los componentes que
+                            trabajan juntos para lograr el éxito de la Web. Entre estos componentes están las
+                            tecnologías web, los agentes de usuario como navegadores web y otros “agentes de
+                            usuario” , herramientas de creación (gestores de contenido, diseñadores web), y sitios
+                            web. La WAI del W3C desarrolla especificaciones técnicas, pautas, técnicas y recursos
+                            de apoyo que describen soluciones de accesibilidad.
+                        </p>
+                        <h3>Aspectos de la accesibilidad web</h3>
+                        <p>
+                            Entre los más importantes se pueden citar:
+                        </p>
+                        <ul type="disc">
+                            <li>Título de las páginas web.</li>
+                            <li>Texto alternativo para imágenes.</li>
+                            <li>Relación de contraste.</li>
+                            <li>Acceso por teclado y enfoque visual.</li>
+                            <li>Alternativas multimedia (vídeo, audio).</li>
+                            <li>Estándares de accesibilidad WEB.</li>
+                            <li>Niveles o Criterios de éxito.</li>
+                        </ul> 
+                        <h3>Esfuerzos para cumplir con la accesibilidad web</h3>
+                        <p> El W3C para ayudar a que los sitios web sean accesibles, dictamina: Directrices,
+                            principios y pautas para diseñar sitios web accesibles.                        
+                        </p> 
+                        <h3>Principios y pautas de las WCAG 2.1</h3>
+                        <img id="img-contenido"  src="../img/principios.png" alt="">
+                        <p> 
+                            A día de hoy, existen unas pautas de verificación globalmente conocidas, hablamos de las WCAG 2.1. 
+                            Estas se rigen por 4 principios: 
+                        </p> 
+                        <h3>Principio 1 (Perceptible)</h3>
+                        <p> 
+                            Cualquier información que se muestre debe presentarse a los usuarios de forma que pueda ser percibida fácilmente. 
+                        </p> 
+                        <ul type="disc">
+                            <li>Incluir texto alternativo a todo el contenido que no sea textual.</li>
+                            <li>Proporcionar alternativas al contenido tempo-dependiente. </li>
+                            <li>Crear contenido que sea adaptable a diferentes formas sin perder información o estructura. </li>
+                            <li>Que la presentación de los contenidos se perciba de forma instantánea. </li>                           
+                        </ul>   
+                        <h3>Principio 2 (Operable)</h3>
+                        <p> 
+                            La navegación ha de ser manejable, es decir, se debe poder acceder al contenido desde cualquier dispositivo de apoyo. 
+                        </p> 
+                        <ul type="disc">
+                            <li>Todas las funcionalidades deben ser accesibles mediante un teclado. </li>
+                            <li>Hay que proporcionar tiempo suficiente a los usuarios para que puedan leer y entender el contenido.  </li>
+                            <li>No presentar contenidos que puedan provocar trastornos en los usuarios.  </li>
+                            <li>Facilitar ayudas a los usuarios en la navegación, es decir, para encontrar contenido o saber en qué lugar se encuentran. </li>                           
+                        </ul>   
+                        <h3>Principio 3 (Comprensible)</h3>
+                        <p> 
+                            El contenido que proporcionemos ha de ser claro y fácil de interpretar, sin dar lugar a confusiones o equivocaciones. 
+                        </p> 
+                        <ul type="disc">
+                            <li>Crear contenido legible y comprensible. </li>
+                            <li>Que la navegación de las páginas web sea predecible.  </li>
+                            <li>Ayudar a los usuarios a prevenir y corregir los errores.  </li>                       
+                        </ul>   
+                        <h3>Principio 4 (Robusto)</h3>
+                        <p> 
+                            El contenido y la navegación ha de ser interpretado por los navegadores y tecnologías de apoyo. 
+                        </p> 
+                        <ul type="disc">
+                            <li>Asegurar la compatibilidad con las aplicaciones de usuarios actuales y futuras. </li> 
+                        </ul>   
+                    </div> 
+                </div>
+        </section>
+        <footer>
             <div class="footer">
                 <ul class="footer-estudiantes">                        
                     <li class="nav-item">

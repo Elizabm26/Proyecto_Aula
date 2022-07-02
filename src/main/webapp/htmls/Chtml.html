@@ -68,7 +68,7 @@ and open the template in the editor.
                                 <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item text-white" href="#">HTML</a></li>
                                     <li><a class="dropdown-item text-white" href="css.html">CSS</a></li>
-                                    <li><a class="dropdown-item text-white" href="java.html">Java</a></li>
+                                    <li><a class="dropdown-item text-white" href="java.html">JavaScript</a></li>
                                     <li><a class="dropdown-item text-white" href="inclusivo.html">Diseño inclusivo</a></li>      
                                     <li><a class="dropdown-item text-white" href="jsp.html">JSP</a></li>   
                                 </ul>
@@ -102,6 +102,22 @@ and open the template in the editor.
                             <li>Los elementos HTML le dicen al navegador cómo mostrar el contenido</li>
                             <li>Los elementos HTML etiquetan piezas de contenido como "este es un encabezado", "este es un párrafo", "este es un enlace", etc.</li>                           
                         </ul> 
+                        <h3>Evolución del HTML</h3>
+                        <ul type="disc">
+                            <li>En 1997 nace HTML4 publicado por el W3C como estándar de diseño web.</li>
+                            <li>En 1999 nace XHTML 1.0 que extiende HTML4.</li>
+                            <li>En 2001 se publica la nueva versión de XHTML,la 1.1</li>
+                            <li>En 2002 se prepara un borrador para una nueva versión de XHTML</li>
+                            <li>En 2008 naceHTML5 como el sucesor de HTML4 y XHTML 1.1</li>                    
+                        </ul> 
+                        <h3>Tipos de elementos HTML</h3>
+                        <ul type="disc">
+                            <li><b>Estructurales:</b> Describen el propósito del texto y no denotan ningún formatoespecífico.</li>
+
+                            <li><b>De Presentacion:</b> Describen la apariencia del texto, independientemente de sufunción.
+                                Los elementos de presentación se encuentran obsoletos desde la aparición del CSS.</li>
+                            <li><b>De HiperTexto:</b> Relaciona una parte del documento a otros documentos.</li>                                          
+                        </ul> 
                         <h3>Estrucutra de un documento HTML</h3>
                         <p>
                             <img id="img-contenido" src="../img/documentoHtml.jpg" alt="">
@@ -118,76 +134,20 @@ and open the template in the editor.
                         <p> 
                             A continuación se muestra una visualización de la estructura de una página HTML:                            
                         </p> 
-                        <img id="img-contenido" src="../img/estructuraHtml.jpg" alt="">
+                        <img id="img-contenido" src="../img/estructuraHtml.jpg" alt="">                      
+                        <h3>La sección HEAD</h3>                        
                         <ul type="disc">
-                            <li>Páginas estáticas</li>
-                            <li>Carga rápida de las páginas</li>
-                            <li>Dispersión del consumidor</li>
-                            <li>Contenido creado por organizaciones</li>
-                            <li>Baja frecuencia de cambios</li>
-                            <li>Falta de normas</li>
-                            <li>Falta de autenticación</li>
-                            <li>Muy pocos buscadores y navegadores</li>
-                            <li>Navegación poco estructurada</li>
-                            <li>Interacción con el usuario casi nula</li>
-                            <li>Diseño sencillo de páginas web</li>
+                            <li>Contiene metainformación de la página</li>
+                            <li>Establecemos título y palabras clave para los buscadores</li>
+                            <li>Incluimos hojas de estilo (CSS) a utilizar en la página</li>
+                            <li>Podemos introducir código javascript a usar en nuestra página.</li>                           
                         </ul>
-
-                        <h3>La Web 2.0 - Web Social</h3>
-                        <p> 
-
-                        </p> 
-                        <h3>Características</h3>
-                        <p> 
-                            Al seguir la misma línea de la Web 1.0, las características de la Web 2.0, se relacionan
-                            con el contenido, el grado de interacción con el usuario, el tipo de comunicación entre
-                            los navegadores y la WWW. Como características principales se pueden mencionar a
-                            las siguientes:                      
-                        </p> 
+                        <h3>La sección BODY</h3>                      
                         <ul type="disc">
-                            <li>Las páginas dejan de ser estáticas.</li>
-                            <li>Carga de las páginas.</li>
-                            <li>Dispersión del consumidor.</li>
-                            <li>Propietarios de los sitios web.</li>
-                            <li>Frecuencia de cambios.</li>
-                            <li>Estándares de diseño web.</li>
-                            <li>Autenticación de Usuarios.</li>
-                            <li>Abundantes buscadores y navegadores.</li>
-                            <li>Navegación estructurada.</li>
-                            <li>Interacción con el usuario.</li>
-                            <li>Diseño de sitios web.</li>
-                        </ul>
-                        <h3>La Web 3.0 o ¿la Web Semántica?</h3>
-                        <p> 
-
-                        </p> 
-                        <h3>Elementos clave de la Web 3.0</h3>
-                        <p> 
-
-                        </p> 
-                        <ul type="disc">
-                            <li>Web Social.</li>
-                            <li>La web semántica.</li>
-                            <li>Web 3D.</li>
-                            <li>La Web centrada en los medios.</li>
-                            <li>La Web Omnipresente y Ubicua (WOU).</li>
-                            <li>Inteligencia Artificial.</li>                            
-                        </ul>
-                        <h3>La Web 4.0 o ¿Internet de las Cosas?</h3>
-                        <p> 
-
-                        </p>   
-                        <h3>Elementos de la Web 4.0</h3>
-                        <p> 
-                            Mucho de lo que hay ya es de la Web 4.0, sin embargo será aún más diferente. Cuando
-                            esté completamente desarrollado, eliminará varios de los pasos necesarios al usar la
-                            Web 3.0, de esta manera su uso será más directo e “invisible”:               
-                        </p> 
-                        <ul type="disc">
-                            <li>Los motores de búsqueda</li>
-                            <li>Una Red activa</li>
-                            <li>Big Data</li>
-                            <li>Aplicaciones web Inteligentes.</li>
+                            <li>Alberga el "contenido" real de la página.</li>
+                            <li>Establece cómo se visualizan los elementos.</li>
+                            <li>Hace uso de los scripts y hojas de estilo definidos en la sección HEAD.</li>
+                            <li>En este punto tenemos a nuestra disposición de todos los tags disponibles para maquetar nuestra página.</li>                     
                         </ul>
                     </div> 
                 </div>

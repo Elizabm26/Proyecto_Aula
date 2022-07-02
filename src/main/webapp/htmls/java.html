@@ -24,11 +24,19 @@ and open the template in the editor.
             }
             h3{
                 font-family: Time;
-            }            
+            }     
+            #img-contenido{
+                height: 200px;
+                width: 350px;
+                margin:10px auto;
+                display:block;
+                margin-left: auto;
+                margin-right: auto;
+            }
         </style>
     </head>
     <body>
-          <div class=" header bg-dark">
+        <div class=" header bg-dark">
             <div class="header-informacion bg-dark">
                 <h1>Universidad Técnica Estatal de Quevedo</h1>
                 <p>Aplicaciones Web</p>
@@ -56,7 +64,7 @@ and open the template in the editor.
                                 <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item text-white" href="Chtml.html">HTML</a></li>
                                     <li><a class="dropdown-item text-white" href="css.html">CSS</a></li>
-                                    <li><a class="dropdown-item text-white" href="#">Java</a></li>
+                                    <li><a class="dropdown-item text-white" href="#">JavaScript</a></li>
                                     <li><a class="dropdown-item text-white" href="inclusivo.html">Diseño inclusivo</a></li>      
                                     <li><a class="dropdown-item text-white" href="jsp.html">JSP</a></li>   
                                 </ul>
@@ -66,7 +74,95 @@ and open the template in the editor.
                 </div>
             </nav>                      
         </div>
-         <footer>
+        <section>
+            <div class="material">
+                <div class="material-titulo">
+                    <h1 id="titulo">
+                        Introducción a JavaScript                   
+                    </h1>
+                    <img id="img-titulo" src="../img/java.jpg" alt="">
+                </div>        
+                <!-- SEPARADOR -->
+                <hr size="3px" color="black">
+                <div class="material-html">            
+                    <div>                        
+                        <h3>¿Qué es JavaScript?</h3>
+                        <p>
+                            JavaScript es un lenguaje de programación o de secuencias de comandos que te permite implementar funciones complejas en páginas web, 
+                            cada vez que una página web hace algo más que sentarse allí y mostrar información estática para que la veas, muestra oportunas 
+                            actualizaciones de contenido, mapas interactivos, animación de Gráficos 2D/3D, desplazamiento de máquinas reproductoras de vídeo, etc., 
+                            puedes apostar que probablemente JavaScript está involucrado. Es la tercera capa del pastel de las tecnologías web estándar, 
+                            dos de las cuales (HTML y CSS) hemos cubierto con mucho más detalle en otras partes del Área de aprendizaje.
+                            <img id="img-contenido" src="../img/javascript.png" alt="">
+                        </p>                        
+                        <h3> Incorporando Javascript</h3>   
+                        <p>
+                            Siguiendo los mismos lineamientos que en CSS, existen tres técnicas para incorporar
+                            código Javascript dentro de HTML. Sin embargo, al igual que en CSS, solo la inclusión de
+                            archivos externos es la recomendada a usar en HTML5. 
+                        </p>
+                        <h3> En línea</h3>
+                        <p>
+                            Esta es una técnica simple para insertar Javascript en nuestro documento que se
+                            aprovecha de atributos disponibles en elementos HTML. Estos atributos son manejadores
+                            de eventos que ejecutan código de acuerdo a la acción del usuario.
+                            Los manejadores de eventos más usados son, en general, los relacionados con el ratón,
+                            como por ejemplo onclick, onMouseOver, u onMouseOut. Sin embargo, encontraremos
+                            sitios web que implementan eventos de teclado y de la ventana, ejecutando acciones
+                            luego de que una tecla es presionada o alguna condición en la ventana del navegador
+                            cambia (por ejemplo, onload u onfocus). 
+                            <img id="img-contenido" src="../img/javalinea.jpg" alt="">
+                        </p>
+                        <h3>Embebido </h3>
+                        <p>
+                            Para trabajar con códigos extensos y funciones personalizadas debemos agrupar los
+                            códigos en un mismo lugar entre etiquetas script.El elemento script actúa
+                            exactamente igual al elemento style usado para incorporar estilos CSS.Nos ayuda a
+                            organizar el código en un solo lugar, afectando a los elementos HTML por medio de
+                            referencias.
+                            Del mismo modo que con el elemento style, en HTML5 no debemos usar ningún
+                            atributo para especificar lenguaje.Ya no es necesario incluir el atributo type en la
+                            etiqueta script .HTML5 asigna Javascript por defecto.
+                            <img id="img-contenido" src="../img/embebido.jpg" alt="">
+
+                        </p>
+                        <h3> Archivos externos </h3>
+                        <p>
+                            Los códigos Javascript crecen exponencialmente cuando agregamos nuevas funciones y
+                            aplicamos algunas de las APIs mencionadas previamente. Códigos embebidos incrementan
+                            el tamaño de nuestros documentos y los hacen repetitivos (cada documento debe volver a
+                            incluir los mismos códigos). Para reducir los tiempos de descarga, incrementar nuestra
+                            productividad y poder distribuir y reusar nuestros códigos en cada documento sin
+                            comprometer eficiencia, recomendamos grabar todos los códigos Javascript en uno o más
+                            archivos externos y llamarlos usando el atributo src: 
+                            <img id="img-contenido" src="../img/archivosextremos.jpg" alt="">
+                        </p>                       
+                        <h3>Nuevos Selectores </h3>
+                        <p> 
+                            Para elevar Javascript al nivel
+                            que las circunstancias requieren, nuevas alternativas debieron ser incorporadas. Desde
+                            ahora podemos seleccionar elementos HTML aplicando toda clase de selectores CSS por
+                            medio de los nuevos métodos querySelector() y querySelectorAll().                           
+                        </p>    
+                        <h3>querySelector()</h3>
+                        <p> 
+                            Este método retorna el primer elemento que concuerda con el grupo de selectores
+                            especificados entre paréntesis. Los selectores son declarados usando comillas y la misma
+                            sintaxis CSS, como en el siguiente ejemplo: 
+                            <img id="img-contenido" src="../img/query.jpg" alt="">
+                        </p> 
+                        <h3>querySelectorAll() </h3>
+                        <p> 
+                            En lugar de uno, el método querySelectorAll() retorna todos los elementos que
+                            concuerdan con el grupo de selectores declarados entre paréntesis. El valor retornado es
+                            un arreglo (array) conteniendo cada elemento encontrado en el orden en el que aparecen
+                            en el documento.                 
+                            <img id="img-contenido" src="../img/allselector.jpg" alt="">
+                        </p> 
+                    </div>
+                </div>
+        </section>
+        <footer>
             <div class="footer">
                 <ul class="footer-estudiantes">                        
                     <li class="nav-item">

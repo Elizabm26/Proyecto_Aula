@@ -24,11 +24,22 @@ and open the template in the editor.
             }
             h3{
                 font-family: Time;
-            }            
+            }     
+            li{
+                font-family: Time;
+            }
+            #img-contenido{
+                height: 200px;
+                width: 350px;
+                margin:10px auto;
+                display:block;
+                margin-left: auto;
+                margin-right: auto;
+            }
         </style>
     </head>
     <body>
-          <div class=" header bg-dark">
+        <div class=" header bg-dark">
             <div class="header-informacion bg-dark">
                 <h1>Universidad Técnica Estatal de Quevedo</h1>
                 <p>Aplicaciones Web</p>
@@ -56,7 +67,7 @@ and open the template in the editor.
                                 <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item text-white" href="Chtml.html">HTML</a></li>
                                     <li><a class="dropdown-item text-white" href="css.html">CSS</a></li>
-                                    <li><a class="dropdown-item text-white" href="java.html">Java</a></li>
+                                    <li><a class="dropdown-item text-white" href="java.html">JavaScript</a></li>
                                     <li><a class="dropdown-item text-white" href="inclusivo.html">Diseño inclusivo</a></li>      
                                     <li><a class="dropdown-item text-white" href="jsp.html">JSP</a></li>   
                                 </ul>
@@ -66,7 +77,72 @@ and open the template in the editor.
                 </div>
             </nav>                      
         </div>
-         <footer>
+        <section>
+            <div class="material">
+                <div class="material-titulo">
+                    <h1 id="titulo">
+                        Introducción JSP                       
+                    </h1>
+                    <img id="img-titulo" src="../img/jsp.png" alt="">
+                </div>        
+                <!-- SEPARADOR -->
+                <hr size="3px" color="black">
+                <div class="material-html">            
+                    <div>                        
+                        <h3>¿Qué es JSP?</h3>
+                        <p>
+                            Java Server Pages (JSP) es una tecnología que nos permite mezclar HTML estático con HTML generado dinámicamente. Muchas páginas Web que están construidas con programas CGI son casi estáticas, con la parte dinámica limitada a muy pocas localizaciones. Pero muchas variaciones CGI, incluyendo los servlets, hacen que generemos la página completa mediante nuestro programa, incluso aunque la mayoría de ella sea siempre lo mismo. JSP nos permite crear dos partes de forma separada.                        
+                        </p>
+                        <h3>¿Cuáles son las Ventajas de JSP?</h3>                        
+                        <ul type="disc">
+                            <li><b>Contra Active Server Pages (ASP):</b> Las ventajas de JSP estan duplicadas. Primero, la parte dinámica está escrita en Java, no en Visual Basic, por eso es mucho más poderosa y fácil de usar. Segundo, es portable a otros sistemas operativos y servidores Web.</li>
+                            <li><b>Contra los Servlets:</b> JSP no nos da nada que no pudierámos en principio hacer con un servlet. Pero es mucho más conveniente escribir (y modificar!) HTML normal que tener que hacer un billón de sentencias println que generen HTML. Además, separando el formato del contenido podemos poner diferentes personas en diferentes tareas: nuestros expertos en diseño de páginas Web pueden construir el HTML, dejando espacio para que nuestros programadores de servlets inserten el contenido dinámico.</li>
+                            <li><b>Contra JavaScript:</b> JavaScript puede general HTML dinámicamente en el cliente. Este una capacidad útil, pero sólo maneja situaciones donde la información dinámica está basada en el entorno del cliente. Con la excepción de las cookies, el HTTP y el envió de formularios no están disponibles con JavaScript. Y, como se ejecuta en el cliente, JavaScript no puede acceder a los recursos en el lado del servidor, como bases de datos, catálogos, información de precios, etc.</li>
+                        </ul> 
+                        <h3>Elementos Script JSP</h3>
+                        <p> 
+                            Los Scripts JSP permiten insertar codigo java en el servlet resultante de la compilacion de la pagina JSP, hay tres formas:                         
+                        </p>                        
+                        <ul type="disc">
+                            <li><b>Expresiones:</b> Que se evaluan y se insertan en la salida de la web resultante, <%= expresion %></li>
+                            <li><b>Scriptlets:</b> Es codigo java que se introduciria en el metodo service del servlet, <% codigo %></li>
+                            <li><b>Declaraciones:</b> Es la manera de declarar variables globales para todo el servlet, <%! codigo%></li>
+                        </ul>
+                        <h3>Expresiones</h3>
+                        <p> 
+                            Se usan para mandar valores directamente a la pagina web resultante de la JSP, <%= expresion %>, la expresion es ejecutada, se convierte a una cadena de caracteres (String) y insertada en la pagina.
+                            En las expresiones podemos usar gran cantidad de variables predefinidas, los mas usados son:
+                        </p> 
+                        <ul type="disc">
+                            <li><b>request</b> de la clase HttpServletRequest</li>
+                            <li><b>response</b> de la clase HttpServletResponse</li>
+                            <li><b>session</b> de la clase HttpSession que esta asociada al request, si es que trabajamos con sessions</li>
+                            <li><b>out</b> se trata de una clase PrintWriter usada para imprimir directamente en la pagina resultante.</li>
+                        </ul>
+                        <h3>Scriptlets</h3>
+                        <p> 
+                            Si queremos hacer algo más complejo que insertar una simple expresión, los scriptlets JSP nos permiten insertar código arbitrario dentro del método servlet que será construido al generar la página. Los Scriptlets tienen la siguiente forma:                    
+                        </p> 
+                        <img id="img-contenido" src="../img/script1.jpg" alt="">
+                        <p>
+                            Si queremos usar los caracteres "%>" dentro de un scriptlet, debemos poner "%\>". Finalmente, observa que el equivalente XML de <% Código %> es :
+                        </p>
+                        <img id="img-contenido" src="../img/script2.jpg" alt="">
+
+                        <h3>Declaraciones</h3>
+                        <p> 
+                            as declaraciones JSP nos permiten configurar variables para su uso posterior en expresiones o scriptlets. También podemos declarar variables dentro de expresiones o scriptlets en el momento de usarlas.
+                            El ámbito es toda la página JSP, no hay concepto de variables de ejemplar. Es decir, no tenemos que declarar variables de ejemplar para usar en más de una expresión o scriptlet. Las declaraciones van encerradas entre etiquetas de declaración <%! Codigo Java %>.
+                            Como las declaraciones no generan ninguna salida, normalmente se usan en conjuncion con expresiones JSP o scriptlets, ejemplo:
+                        </p> 
+                        <img id="img-contenido" src="../img/declaracion.jpg" alt="">                     
+                        <p> 
+                            Este codigo imprime el numero de veces que se ha solicitado la pagina actual desde que el servidor se arranco (o la clase del servlet se modifico o recargo)
+                        </p>  
+                    </div> 
+                </div>
+        </section>
+        <footer>
             <div class="footer">
                 <ul class="footer-estudiantes">                        
                     <li class="nav-item">
