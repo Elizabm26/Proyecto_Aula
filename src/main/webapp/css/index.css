@@ -100,7 +100,7 @@ li{
 }
 
 .referencias-contenido{
-    display: grid;
+    display: -webkit-inline-box;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -111,7 +111,7 @@ li{
 
 .referencias-contenido p{
     font-style: italic;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 /* DIV - FOOTER */
