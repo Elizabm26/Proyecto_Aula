@@ -100,7 +100,7 @@ li{
 }
 
 .referencias-contenido{
-    display: -webkit-inline-box;
+    display: inline-flex;
     grid-template-columns: 1fr 1fr;
 }
 
