@@ -100,7 +100,7 @@ li{
 }
 
 .referencias-contenido{
-    display: inline-flex;
+    display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -111,9 +111,8 @@ li{
 
 .referencias-contenido p{
     font-style: italic;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
-
 /* DIV - FOOTER */
 .footer{
     height: 60px;
