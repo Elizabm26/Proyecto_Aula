@@ -99,10 +99,6 @@ li{
     margin-left: auto;
 }
 
-.referencias-contenido{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
 .referencias-contenido h2{
     font-size: 15px;
@@ -133,4 +129,6 @@ li{
     font-size: 20px;
     color: #fff;
     font-family: 'Roboto Condensed', sans-serif;   
+}
+.numbb{
 }
